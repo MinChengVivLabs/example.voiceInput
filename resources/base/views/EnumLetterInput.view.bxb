@@ -1,0 +1,25 @@
+input-view {
+  match: EnumLetter(this) {
+    to-input: TryOneQuestion(action)
+  }
+  message {
+    template ("From #{raw(action.question.source)}, #{value(action.question.textQuestion)}") {
+      speech ("From #{value(action.question.source)}, #{value(action.question.textQuestion)}")
+    }
+  }
+  render {
+    selection-of (action.question.answerChoice) {
+      where-each (item) {
+        cell-card {
+          slot2 {
+            content {
+              primary {
+                template ("#{value(item.letter)}. #{value(item.answer)}")
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

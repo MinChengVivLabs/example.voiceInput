@@ -1,0 +1,8 @@
+result-view {
+  match: TextResult(this) {
+    from-output: TryOneQuestion(action)
+  }
+  message {
+    template ("#{value(action.userVoiceAnswer)} is #{value(this)}")
+  }
+}

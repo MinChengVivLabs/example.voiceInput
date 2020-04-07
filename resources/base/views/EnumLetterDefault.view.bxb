@@ -1,0 +1,5 @@
+input-view {
+  match: EnumLetter(this) {
+  }
+  message ("Why am I here in default input-view?")
+}

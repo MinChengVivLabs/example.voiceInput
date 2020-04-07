@@ -1,0 +1,25 @@
+action (TryOneQuestion) {
+  description (test action of one question)
+  type (Calculation)
+  collect {
+    input (mode) {
+      type (viv.core.Integer)
+      min (Optional) max (One)
+    }
+    computed-input (question) {
+      type (StructQuestion)
+      min (Required) max (One)
+      compute {
+        intent {
+          goal: CreateQuestion
+          value: $expr(mode)
+        }
+      }
+    }
+    input (userVoiceAnswer) {
+      type (EnumLetter)
+      min (Required) max (One)
+    }
+  }
+  output (TextResult)
+}

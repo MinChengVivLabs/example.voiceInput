@@ -1,0 +1,8 @@
+capsule-info {
+  display-name (Sample Voice Input)
+  developer-name (Min(Required))
+  description ("Example capsule of voice input")
+  dispatch-name (Same Voice Input)
+  // Create and set a path for your icon asset
+  // icon-asset (images/icons/example.png)
+}

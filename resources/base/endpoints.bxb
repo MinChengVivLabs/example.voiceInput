@@ -1,0 +1,12 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (CreateQuestion) {
+      accepted-inputs (mode)
+      local-endpoint ("CreateQuestion.js")
+    }
+    action-endpoint (TryOneQuestion) {
+      accepted-inputs (mode, userVoiceAnswer, question)
+      local-endpoint ("TryOneQuestion.js")
+    }
+  }
+}

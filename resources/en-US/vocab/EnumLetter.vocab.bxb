@@ -1,0 +1,6 @@
+vocab(EnumLetter) {
+  "A" {"A" "ace"}
+  "B" {"B" "bee" "be" }
+  "C" {"C" "see" "sea" "See"}
+  "D" {"D" "t" "deed"}
+}

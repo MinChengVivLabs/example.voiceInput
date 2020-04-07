@@ -1,0 +1,11 @@
+structure (StructAnswerChoice) {
+  description (__DESCRIPTION__)
+  property (answer) {
+    type (TextAnswerChoice)
+    min (Required) max (One)
+  }
+  property (letter) {
+    type (EnumLetter)
+    min (Required) max (One)
+  }
+}

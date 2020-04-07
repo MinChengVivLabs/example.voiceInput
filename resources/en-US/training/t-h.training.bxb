@@ -1,0 +1,6 @@
+train (t-hj05vy4ino5n3tqblv9z9bw2y) {
+  utterance ("[g:TryOneQuestion] try one question with (A)[v:EnumLetter:A]")
+  plan (Y2BmUCjISaxML8ovzUvRK8vPTE71zCsoLdELSa0oCUotLs0pYVDBoaKo0j8vNbA0tbgkMz8PlzmueaW5PqklJalFDEwMjEDMACQZGUAAygcA)
+  enabled (false)
+  last-modified (1586204022811)
+}

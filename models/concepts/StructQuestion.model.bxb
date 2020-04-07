@@ -1,0 +1,19 @@
+structure (StructQuestion) {
+  description (contains all element of a question)
+  property (textQuestion) {
+    type (TextQuestion)
+    min (Required) max (One)
+  }
+  property (answerChoice) {
+    type (StructAnswerChoice) 
+    min (Optional) max (Many)
+  }
+  property (correctAnswer) {
+    type (EnumLetter)
+    min (Required) max (One) visibility (Private)
+  }
+  property (source) {
+    type (TextSource)
+    min (Required) max (One)
+  }
+}

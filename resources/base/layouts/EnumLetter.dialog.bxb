@@ -1,0 +1,9 @@
+dialog (Value) {
+  match: TextSource (this)
+  if (this == 'GitLab') {
+    template("Git Lab")
+  }
+  else {
+    template("#{raw(this)}")
+  }
+}

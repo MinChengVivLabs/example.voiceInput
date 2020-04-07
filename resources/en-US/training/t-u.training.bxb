@@ -1,0 +1,5 @@
+train (t-ui482ek61o6uecu1pldcogfx0) {
+  utterance ("[g:EnumLetter:prompt] answer is (C)[v:EnumLetter:C]")
+  plan (Y2BiUCjISaxML8ovzUvRK8vPTE71zCsoLdFzzSvN9UktKUktIkIFIxAyMPAAMRMQA9kA)
+  last-modified (1586204009689)
+}

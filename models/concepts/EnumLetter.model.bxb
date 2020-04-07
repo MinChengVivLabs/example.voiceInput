@@ -1,0 +1,7 @@
+enum (EnumLetter) {
+  description (standard Quiz answer letter)
+  symbol ("A")
+  symbol ("B")
+  symbol ("C")
+  symbol ("D")
+}

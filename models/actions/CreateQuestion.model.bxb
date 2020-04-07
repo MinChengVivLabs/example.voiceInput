@@ -1,0 +1,11 @@
+action (CreateQuestion) {
+  description (__DESCRIPTION__)
+  type (Constructor)
+  collect {
+    input (mode) {
+      type (viv.core.Integer)
+      min (Optional) max (One)
+    }
+  }
+  output (StructQuestion)
+}

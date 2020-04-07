@@ -1,0 +1,21 @@
+input-view {
+  match: TextUserAnswer(this) {
+    to-input: TryOneQuestion(action)
+  }
+  message("#value{action.question.textQeustion}")
+  render {
+    selection-of (action.question.answerChoice) {
+      where-each (item) {
+        cell-card {
+          slot2 {
+            content {
+              primary {
+                template ("#{value(item)}")
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
